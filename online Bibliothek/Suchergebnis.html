@@ -1,0 +1,84 @@
+<!-- Sprachdeklarierung -->	
+<!DOCTYPE html>
+<html lang="de">
+	
+	<head>
+	<!-- Titel für die Seite -->
+	<title> Online-Bibliothek-Übersicht </title>
+	 <link href=style.css type=text/css rel=stylesheet>
+	</head>
+
+		<body>
+		<div class="header">
+			<!-- Zu ignorierender Platzhalter -->
+			<img id="logo" alt="" src="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Bilder/logo.png"> 
+			<!-- Textalternative für Bild/Icon -->
+			<img id="flag" alt="Flaggen-Icon für deutsch" src="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Bilder/de1.jpg">
+			<a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Sprachauswahl.html">
+			<img id="Dreieck" src="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Bilder/2000px-Dreieck_auf_Basis.svg.png">
+			</a>
+			<form id="suche">
+			<input type="search" id="searchbar"  placeholder="Titel, Autor, ISBN">
+			<button id="knopf" onclick="location.href='http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Suchergebnis.html'" type="button"> Suchen </button>
+		</form>
+		</div>
+		
+	
+		
+	
+		<!-- Anordnung der Navigation als Liste -->
+		<div id="BB">
+		<button onclick="show()">
+		<img id="MB" src="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Bilder/Hamburger_icon.svg.png">
+		</button>
+		</div>
+		
+		<script>
+		function show() {
+  var x = document.getElementById("box1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+		
+		
+		
+		
+		<!-- Heading-Element am Anfang eines Abschnitts -->
+		<!-- ARIA Landmark -->
+		<div id="box2" role="heading">
+		<h1> Ihre Suchergebnisse: </h1>
+		</div>
+		
+
+		<div id="box3">
+		<a href="javascript:history.back()">
+		<img id="closeb2" src="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Bilder/close.svg">
+		</a>
+		</div>
+		
+		<div id="box1" role="navigation">
+		<ul id="Menue">
+		<!-- Beschriftete Links -->
+		<li id="M"><a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Merkliste.html" style="color: black; text-decoration: none"> Merkliste</a></li>
+		<li id="M"><a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Reservierungen.html" style="color: black; text-decoration: none">  Reservierungen</a></li>
+		<li id="M"><a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Postfach.html" style="color: black; text-decoration: none">  Postfach</a></li>
+		<li id="M"><a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Kontakt.html" style="color: black; text-decoration: none">  Kontakt</a></li>
+		<li id="M"><a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/%c3%9cbersichtA.html" style="color: black; text-decoration: none"> Abmelden </a></li>
+		</ul>
+		</div>
+	
+		<div id="box4">
+	
+		<ul id="Auflistung">
+                <li> <a href="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/wid.html"> <img id="Auf" src="http://fbwallinone.th-brandenburg.de/~string/Usability/online%20Bibliothek/Bilder/Wi.png"></a></li>
+		</ul> 
+		</div>
+		
+		
+
+		</body>
+</html>
